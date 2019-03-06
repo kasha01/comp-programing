@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="google" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/google" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/google" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="X_total_shape.h" />
+		<Unit filename="a_b_c_count_of_strings.h" />
+		<Unit filename="allocate_min_number_of_pages.h" />
+		<Unit filename="celebrity_problem.h" />
+		<Unit filename="connect_nodes_at_same_level.h" />
+		<Unit filename="count_bst_nodes_in_rage.h" />
+		<Unit filename="does_soduko_have_solution.h" />
+		<Unit filename="duplicate_subtree_in_BT.h" />
+		<Unit filename="flood_fill.h" />
+		<Unit filename="generate_binary_string.h" />
+		<Unit filename="hungarian.h" />
+		<Unit filename="interleaved_string.h" />
+		<Unit filename="largest_word_in_dic.h" />
+		<Unit filename="longest_k_unique_char.h" />
+		<Unit filename="longest_valid_parentheses.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="max_absolute_diff.h" />
+		<Unit filename="maximum_index.h" />
+		<Unit filename="merge_two_bst.h" />
+		<Unit filename="meta_strings.h" />
+		<Unit filename="min_char_to_convert_to_palindrome.h" />
+		<Unit filename="min_cut_squares.h" />
+		<Unit filename="overlapping_intervals.h" />
+		<Unit filename="painter_partition.h" />
+		<Unit filename="pots_of_gold.h" />
+		<Unit filename="replace_O_with_X_matrix.h" />
+		<Unit filename="root_to_leaf_path_sum.h" />
+		<Unit filename="rotate_matrix_90_clockwise_in_place.h" />
+		<Unit filename="sample.txt" />
+		<Unit filename="word_break.h" />
+		<Unit filename="word_break_2.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

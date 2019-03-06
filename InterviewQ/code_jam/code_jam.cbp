@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="code_jam" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/code_jam" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/code_jam" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="2017_round_b_a_math_encoder.h" />
+		<Unit filename="2018_practise_Gbus.h" />
+		<Unit filename="2018_practise_sort_a_scrambled_itinerary.h" />
+		<Unit filename="country_leader.h" />
+		<Unit filename="event_digits.h" />
+		<Unit filename="gogoolstring.h" />
+		<Unit filename="helper.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="output.txt" />
+		<Unit filename="round_1_a_patterns_overlap.h" />
+		<Unit filename="round_1_a_square_counting.h" />
+		<Unit filename="scratch_paper.txt" />
+		<Unit filename="sherlock_and_parentheses.h" />
+		<Unit filename="source.txt" />
+		<Unit filename="voter.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1481089210 source:f:\github\codeblocks\hr\algo\main.cpp
+	<iostream>
+	<cstdio>
+	<sstream>
+	<queue>
+	<cmath>
+
+1477710830 f:\github\codeblocks\hr\algo\sorting.h
+
+1479090811 f:\github\codeblocks\hr\algo\graphtheo.h
+	<queue>
+
+1480188582 f:\github\codeblocks\hr\algo\extra.h
+

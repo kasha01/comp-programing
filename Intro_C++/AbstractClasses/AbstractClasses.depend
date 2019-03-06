@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1466912904 source:f:\github\codeblocks\intro_c++\abstractclasses\main.cpp
+	<iostream>
+	<vector>
+	<map>
+	<string>
+	<algorithm>
+	<set>
+	<cassert>
+

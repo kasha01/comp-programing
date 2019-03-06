@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="asked_amazon_interview" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/asked_amazon_interview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/asked_amazon_interview" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="add_greater_values_node_bst.h" />
+		<Unit filename="find_2_repeating_elements_in_range.h" />
+		<Unit filename="k_largest_element_from_big_array.h" />
+		<Unit filename="lowest_common_ancestor_binary_tree.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="next_permutation.h" />
+		<Unit filename="print_all_nodes_distance_k_from_target_bst.h" />
+		<Unit filename="print_all_palindrome_permutation_of_string.h" />
+		<Unit filename="pythogorean_triplet.h" />
+		<Unit filename="quora_amazon_most_quest_online_assessment.h" />
+		<Unit filename="rearrange_linked_list.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1506662359 source:f:\github\codeblocks\interviewq\amazons\main.cpp
+	<iostream>
+	<math.h>
+	<algorithm>
+

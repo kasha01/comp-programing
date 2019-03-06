@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Amazon" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Amazon" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Amazon" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="check_mirror_in_narry_tree.h" />
+		<Unit filename="drivers.h" />
+		<Unit filename="equal_point_in_a_string_of_brackets.h" />
+		<Unit filename="equilibrium_point.h" />
+		<Unit filename="fid_all_pairs_with_a_given_sum.h" />
+		<Unit filename="find_k_smallest_element_in_bst.h" />
+		<Unit filename="find_min_number_of_coins.h" />
+		<Unit filename="first_non_repeating_char_in_a_stream.h" />
+		<Unit filename="game_of_xor.h" />
+		<Unit filename="gray_code.h" />
+		<Unit filename="kadane_with_print_subseq.h" />
+		<Unit filename="longest_consecutive_sequence_in_binary_tree.h" />
+		<Unit filename="longest_even_length_substring_2k.h" />
+		<Unit filename="longest_increasing_subsequence.h" />
+		<Unit filename="longest_palindromic_SUBSTRING.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="max_key_strokes.h" />
+		<Unit filename="max_length_chain_pairs.h" />
+		<Unit filename="max_level_sum_in_binary_tree.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="max_profit_buy_sell_stocks_transaction.h" />
+		<Unit filename="max_profit_job.h" />
+		<Unit filename="max_sum_submatrix.h" />
+		<Unit filename="max_sum_submatrix_with_negative_values_no_boundary.h" />
+		<Unit filename="min_jumps.h" />
+		<Unit filename="mobile_numeric_keypad.h" />
+		<Unit filename="modular_power_mod.h" />
+		<Unit filename="myheader.h" />
+		<Unit filename="myhelper.h" />
+		<Unit filename="number_binary_strings_without_consecutive_1.h" />
+		<Unit filename="number_of_ways_to_reach_score.h" />
+		<Unit filename="power_methods.h" />
+		<Unit filename="shortest_common_subsequence.h" />
+		<Unit filename="sort_a_stack.h" />
+		<Unit filename="sum_of_digits.h" />
+		<Unit filename="total_number_of_non_decreasing_int.h" />
+		<Unit filename="ugly_number.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

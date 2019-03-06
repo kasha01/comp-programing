@@ -1,0 +1,19 @@
+
+string generate_string(int a, int b, int c, int d, int n, char f1, char f2){
+	string s="";
+	s=s+f1+f2;
+
+	int _f1=f1;
+	int _f2=f2;
+
+	for(int i=2;i<=n;i++){
+		int ct = ((a*_f2)+(b*_f1)+c)%d;
+		cout << ct << " ";
+		char temp = 'a' + (ct%26);
+		_f1=_f2;
+		_f2=ct;
+		s=s+temp;
+	}
+
+    return s;
+}

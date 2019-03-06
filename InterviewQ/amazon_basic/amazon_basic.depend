@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1507006386 source:f:\github\codeblocks\interviewq\amazon_basic\main.cpp
+	<iostream>
+	<cmath>
+
+1507006386 
+
+1533522327 source:/home/grendizer/CodeBlocks_Projects/InterviewQ/amazon_basic/main.cpp
+	<bits/stdc++.h>
+

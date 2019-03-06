@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1520218938 source:f:\github\codeblocks\interviewq\amazon_hard\main.cpp
+	<iostream>
+	<vector>
+	<map>
+	<sstream>
+	<algorithm>
+	<stack>
+	<string>
+
+1520218938 
+
+1533781008 source:/home/grendizer/CodeBlocks_Projects/InterviewQ/amazon_hard/main.cpp
+	<bits/stdc++.h>
+

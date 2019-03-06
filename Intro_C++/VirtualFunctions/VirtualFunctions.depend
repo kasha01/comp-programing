@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1465881363 source:f:\github\codeblocks\intro_c++\virtualfunctions\main.cpp
+	<cmath>
+	<cstdio>
+	<vector>
+	<iostream>
+	<algorithm>
+

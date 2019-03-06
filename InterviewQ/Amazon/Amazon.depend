@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1502764404 source:f:\github\codeblocks\interviewq\amazon\main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<limits.h>
+	<string.h>
+	<map>
+	<math.h>
+	<algorithm>
+	<array>
+
+1502764404 >
+
+1489548687 f:\github\codeblocks\interviewq\amazon\myheader.h
+
+1489900492 f:\github\codeblocks\interviewq\amazon\drivers.h
+	"myheader.h"
+
+1489900492 h"
+
+1491538213 f:\github\codeblocks\interviewq\amazon\print_nodes_having_k_leaves.h
+
+1533264817 source:/home/grendizer/CodeBlocks_Projects/InterviewQ/Amazon/main.cpp
+	<iostream>
+	<stdio.h>
+	<vector>
+	<limits.h>
+	<string.h>
+	<map>
+	<math.h>
+	<algorithm>
+	<array>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1470112820 source:f:\github\codeblocks\intro_c++\attributeparser\main.cpp
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+	<sstream>
+

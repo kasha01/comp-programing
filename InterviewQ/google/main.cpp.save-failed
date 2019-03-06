@@ -1,0 +1,88 @@
+#include <iostream>
+#include<set>
+#include<vector>
+#include<utility>
+#include<map>
+#include<queue>
+#include<algorithm>
+#include<cstring>
+
+using namespace std;
+
+class obj{
+public:
+    char value;
+    bool visited;
+};
+
+bool check(int x, int y, int n, int m, obj** arr){
+        bool flagup=true; bool flagdown=true; bool flagright=true; bool flagleft=true;
+        if(y-1>=0){
+            obj objup = arr[x][y-1];
+            if(objup.value == 'O' && !objup.visited){
+                objup.visited = true;
+                flagup=check(x,y-1,n,m,arr);
+            }
+        }
+
+        if(y+1<m){
+            obj objdown = arr[x][y+1];
+            if(objdown.value == 'O' && !objdown.visited){
+            objdown.visited = true;
+            flagdown=check(x,y+1,n,m,arr);
+            }
+        }
+
+        if(x+1<n){
+            obj objright = arr[x+1][y];
+            if(objright.value == 'O' && !objright.visited){
+            objright.visited = true;
+            flagright=check(x+1,y,n,m,arr);
+            }
+        }
+
+        if(x-1>=0){
+            obj objleft = arr[x-1][y];
+            if(objleft.value == 'O' && !objleft.visited){
+            objleft.visited = true;
+            flagleft=check(x-1,y,n,m,arr);
+            }
+        }
+
+    return flagup & flagdown & flagleft & flagright;
+};
+
+int main()
+{
+    int n=6; int m=6;
+    char ar[][] = {{'X', 'O', 'X', 'X', 'X', 'X'},
+                     {'X', 'O', 'X', 'X', 'O', 'X'},
+                     {'X', 'X', 'X', 'O', 'O', 'X'},
+                     {'O', 'X', 'X', 'X', 'X', 'X'},
+                     {'X', 'X', 'X', 'O', 'X', 'O'},
+                     {'O', 'O', 'X', 'O', 'O', 'O'},
+                    };
+
+    obj** arr = new obj*[m];
+
+    for(int i=0;i<n;i++){
+        arr[i] = new obj*[m];
+        for(int j=0;j<m;j++){
+            arr[i][j] = new obj();
+        }
+    }
+
+    for(int i=0; i<n; i++){
+        obj* row = arr[i];
+        for(int j=0;j<m;j++){
+            obj node = row[j];
+            node.visited = false;
+            if(node.value == 'O' && !node.visited){
+                node.visited = true;
+                bool res =check(i,j,n,m,arr);
+                if(res){node.value = 'O';}
+            }
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1469845754 source:f:\github\codeblocks\intro_c++\magicspells\main.cpp
+	<iostream>
+	<vector>
+

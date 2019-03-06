@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1522087227 source:f:\github\codeblocks\interviewq\amazon_medium\main.cpp
+	<iostream>
+	<cstring>
+	<algorithm>
+	<vector>
+	<queue>
+	<stack>
+	<list>
+	<math.h>
+	<sstream>
+	<set>
+	<map>
+	<iomanip>
+

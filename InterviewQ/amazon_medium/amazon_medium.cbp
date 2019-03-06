@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="amazon_medium" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/amazon_medium" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/amazon_medium" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Trapping_rain_water.h" />
+		<Unit filename="betting_game.h" />
+		<Unit filename="binary_string.h" />
+		<Unit filename="bottom_view_binary_tree.h" />
+		<Unit filename="combination_sum.h" />
+		<Unit filename="combination_sum_2.h" />
+		<Unit filename="construct_binary_tree_from_parent_array.h" />
+		<Unit filename="count_of_n_digits_number.h" />
+		<Unit filename="diagonal_traversal_tree.h" />
+		<Unit filename="find_number_of_islands.h" />
+		<Unit filename="find_whether_path_exist.h" />
+		<Unit filename="insertion_point_in_y_shaped_linked_list.h" />
+		<Unit filename="knight_walk.h" />
+		<Unit filename="largest_area_in_histogram.h" />
+		<Unit filename="length_largest_region_of_1.h" />
+		<Unit filename="longest_palindrome_substring.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="maximum_tip_calculator.h" />
+		<Unit filename="merge_k_lists.h" />
+		<Unit filename="min_rope_cost.h" />
+		<Unit filename="number_following_pattern.h" />
+		<Unit filename="numbers_to_words.h" />
+		<Unit filename="rat_in_a_maze.h" />
+		<Unit filename="rearrange_characters.h" />
+		<Unit filename="relative_sorting.h" />
+		<Unit filename="remove_loop_linked_list.h" />
+		<Unit filename="smallest_range_k_list.h" />
+		<Unit filename="snake_and_ladder.h" />
+		<Unit filename="subsets.h" />
+		<Unit filename="tic_tac_toe.h" />
+		<Unit filename="total_decoding_messages.h" />
+		<Unit filename="tree_top_view.h" />
+		<Unit filename="triple_sum_in_array.h" />
+		<Unit filename="two_expression_are_same.h" />
+		<Unit filename="water_flow.h" />
+		<Unit filename="wave_array.h" />
+		<Unit filename="word_boogle.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

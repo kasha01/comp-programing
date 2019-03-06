@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1516333708 source:f:\github\codeblocks\interviewq\dynamic_programming\main.cpp
+	<iostream>
+	<strstream>
+	<string>
+
+1516333708 
+
+1533955905 source:/home/grendizer/CodeBlocks_Projects/InterviewQ/dynamic_programming/main.cpp
+	<bits/stdc++.h>
+
