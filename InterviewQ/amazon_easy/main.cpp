@@ -16,8 +16,6 @@ void print(string prefix, string s){
     }
 }
 
-
-
 int main()
 {
 	print("","abc");
