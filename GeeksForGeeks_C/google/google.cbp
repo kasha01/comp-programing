@@ -33,7 +33,6 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="X_total_shape.h" />
-		<Unit filename="a_b_c_count_of_strings.h" />
 		<Unit filename="allocate_min_number_of_pages.h" />
 		<Unit filename="celebrity_problem.h" />
 		<Unit filename="connect_nodes_at_same_level.h" />
@@ -61,6 +60,7 @@
 		<Unit filename="root_to_leaf_path_sum.h" />
 		<Unit filename="rotate_matrix_90_clockwise_in_place.h" />
 		<Unit filename="sample.txt" />
+		<Unit filename="save_ironman.h" />
 		<Unit filename="word_break.h" />
 		<Unit filename="word_break_2.h" />
 		<Extensions>

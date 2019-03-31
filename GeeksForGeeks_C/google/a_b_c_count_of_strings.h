@@ -1,6 +1,5 @@
 #ifndef A_B_C_COUNT_OF_STRINGS_H_INCLUDED
 #define A_B_C_COUNT_OF_STRINGS_H_INCLUDED
-
 // http://practice.geeksforgeeks.org/problems/count-of-strings-that-can-be-formed-using-a-b-and-c-under-given-constraints/0
 
 // Given a length n, count the number of strings of length n that can be made using

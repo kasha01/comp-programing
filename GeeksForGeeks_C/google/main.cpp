@@ -4,6 +4,10 @@ using namespace std;
 
 int main()
 {
+    return 0;
+}
+
+void readfile(){
     ifstream fin;
     fin.open("sample.txt");
 
@@ -15,5 +19,4 @@ int main()
     fo.open("new.txt");
 
     fo << t;
-    return 0;
 }
