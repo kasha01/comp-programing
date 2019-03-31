@@ -2,6 +2,7 @@
 
 namespace GeeksForGeeks_csharp
 {
+	// https://practice.geeksforgeeks.org/problems/count-of-strings-that-can-be-formed-using-a-b-and-c-under-given-constraints/0
 	public class count_of_strings_a_b_c
 	{
 		public void solve()

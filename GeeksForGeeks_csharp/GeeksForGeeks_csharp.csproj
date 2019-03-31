@@ -36,10 +36,21 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="google\easy\count_of_strings_a_b_c.cs" />
+    <Compile Include="google\easy\smallest_window_in_string.cs" />
+    <Compile Include="google\medium\distinct_transformation.cs" />
+    <Compile Include="google\easy\Surpasser_Count.cs" />
+    <Compile Include="google\easy\find_largest_word_in_dictionary.cs" />
+    <Compile Include="microsoft\medium\kth_smallest_element.cs" />
+    <Compile Include="microsoft\medium\maximize_the_array.cs" />
+    <Compile Include="microsoft\medium\Design_a_tiny_URL.cs" />
+    <Compile Include="microsoft\medium\consecutive_1_not_allowed.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="google\" />
     <Folder Include="google\easy\" />
+    <Folder Include="google\medium\" />
+    <Folder Include="microsoft\" />
+    <Folder Include="microsoft\medium\" />
   </ItemGroup>
 </Project>
