@@ -44,6 +44,9 @@
     <Compile Include="microsoft\medium\maximize_the_array.cs" />
     <Compile Include="microsoft\medium\Design_a_tiny_URL.cs" />
     <Compile Include="microsoft\medium\consecutive_1_not_allowed.cs" />
+    <Compile Include="microsoft\medium\excel_sheet.cs" />
+    <Compile Include="microsoft\medium\rotten_oranges.cs" />
+    <Compile Include="microsoft\medium\tic_tac_toe.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
