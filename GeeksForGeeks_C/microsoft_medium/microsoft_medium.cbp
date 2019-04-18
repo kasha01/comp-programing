@@ -33,8 +33,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="circular_tour.h" />
+		<Unit filename="count_number_subtrees_having_given_sum.h" />
 		<Unit filename="longest_even_length_substring.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="merge_k_sorted_arrays.h" />
+		<Unit filename="word_wrap.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

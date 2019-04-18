@@ -50,6 +50,8 @@ int getMaxArea(int hist[], int n)
     // popped bar as the smallest bar
     while (s.empty() == false)
     {
+        // notice here i POPED my bar (top bar). i is the index of the bar that is smaller than my bar on the right side.
+        // and the reamining s.top() is the index of the bar smaller than my bar on the left side.
         tp = s.top();
         s.pop();
         area_with_top = hist[tp] * (s.empty() ? i : i - s.top() - 1);
