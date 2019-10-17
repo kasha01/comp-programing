@@ -14,9 +14,9 @@ namespace GeeksForGeeks_csharp
 				string[] items = _items.Split(' ');
 			}
 		}
-
+			
 		public static void Main (string[] args)
-		{
+		{			
 			
 		}
 	}

@@ -47,6 +47,13 @@
     <Compile Include="microsoft\medium\excel_sheet.cs" />
     <Compile Include="microsoft\medium\rotten_oranges.cs" />
     <Compile Include="microsoft\medium\tic_tac_toe.cs" />
+    <Compile Include="amazon\Sum_of_Query_II.cs" />
+    <Compile Include="amazon\nuts_and_bolts.cs" />
+    <Compile Include="amazon\Possible_groups.cs" />
+    <Compile Include="amazon\String_formation_from_substring.cs" />
+    <Compile Include="amazon\Longest_consecutive_subsequence.cs" />
+    <Compile Include="amazon\maximum_tip_calculator.cs" />
+    <Compile Include="amazon\Digit_multiplier.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -55,5 +62,6 @@
     <Folder Include="google\medium\" />
     <Folder Include="microsoft\" />
     <Folder Include="microsoft\medium\" />
+    <Folder Include="amazon\" />
   </ItemGroup>
 </Project>
