@@ -5,7 +5,7 @@ namespace GeeksForGeeks_csharp
 {
 	public class transform_the_array
 	{
-		public static void Main ()
+		public static void test ()
 		{
 			int[] arr = { 2, 4, 5, 0, 0, 5, 4, 8, 6, 0, 6, 8 };
 			solve (arr, 12);

@@ -40,13 +40,6 @@
     <Compile Include="google\medium\distinct_transformation.cs" />
     <Compile Include="google\easy\Surpasser_Count.cs" />
     <Compile Include="google\easy\find_largest_word_in_dictionary.cs" />
-    <Compile Include="microsoft\medium\kth_smallest_element.cs" />
-    <Compile Include="microsoft\medium\maximize_the_array.cs" />
-    <Compile Include="microsoft\medium\Design_a_tiny_URL.cs" />
-    <Compile Include="microsoft\medium\consecutive_1_not_allowed.cs" />
-    <Compile Include="microsoft\medium\excel_sheet.cs" />
-    <Compile Include="microsoft\medium\rotten_oranges.cs" />
-    <Compile Include="microsoft\medium\tic_tac_toe.cs" />
     <Compile Include="amazon\Sum_of_Query_II.cs" />
     <Compile Include="amazon\nuts_and_bolts.cs" />
     <Compile Include="amazon\Possible_groups.cs" />
@@ -54,6 +47,48 @@
     <Compile Include="amazon\Longest_consecutive_subsequence.cs" />
     <Compile Include="amazon\maximum_tip_calculator.cs" />
     <Compile Include="amazon\Digit_multiplier.cs" />
+    <Compile Include="amazon\print_diagonally.cs" />
+    <Compile Include="amazon\palindromic_array.cs" />
+    <Compile Include="amazon\row_with_minimum_number_of_1_s.cs" />
+    <Compile Include="amazon\zero_sub_subarrays.cs" />
+    <Compile Include="amazon\maximum_sub_array.cs" />
+    <Compile Include="amazon\addition_of_submatrix.cs" />
+    <Compile Include="amazon\next_sparse_binary_number.cs" />
+    <Compile Include="amazon\reverse_bits.cs" />
+    <Compile Include="amazon\sort_an_array_of_0s_1s_2s.cs" />
+    <Compile Include="amazon\does_robot_moves_circular.cs" />
+    <Compile Include="amazon\minimum_energy.cs" />
+    <Compile Include="amazon\finding_position.cs" />
+    <Compile Include="amazon\non_repeating_character.cs" />
+    <Compile Include="amazon\max_sum_without_adjacents.cs" />
+    <Compile Include="amazon\reverse_words_in_a_given_string.cs" />
+    <Compile Include="amazon\search_in_a_rotated_array.cs" />
+    <Compile Include="amazon\subarray_with_0_sum.cs" />
+    <Compile Include="amazon\floor_in_sorted_array.cs" />
+    <Compile Include="amazon\palindrome_numbers.cs" />
+    <Compile Include="amazon\find_pair_given_difference.cs" />
+    <Compile Include="amazon\squares_in_rectangle.cs" />
+    <Compile Include="amazon\key_pair.cs" />
+    <Compile Include="amazon\four_elements.cs" />
+    <Compile Include="amazon\sum_of_two_large_numbers.cs" />
+    <Compile Include="amazon\even_and_odd_elements_at_even_and_odd_positions.cs" />
+    <Compile Include="amazon\save_ironman.cs" />
+    <Compile Include="amazon\element_with_left_side_smaller_and_right_side_greater.cs" />
+    <Compile Include="amazon\let_s_play.cs" />
+    <Compile Include="amazon\count_number_of_words.cs" />
+    <Compile Include="microsoft\two_numbers_with_sum_closest_to_zero.cs" />
+    <Compile Include="microsoft\transform_the_array.cs" />
+    <Compile Include="microsoft\consecutive_1_not_allowed.cs" />
+    <Compile Include="microsoft\Design_a_tiny_URL.cs" />
+    <Compile Include="microsoft\excel_sheet.cs" />
+    <Compile Include="microsoft\kth_smallest_element.cs" />
+    <Compile Include="microsoft\maximize_the_array.cs" />
+    <Compile Include="microsoft\rotten_oranges.cs" />
+    <Compile Include="microsoft\tic_tac_toe.cs" />
+    <Compile Include="microsoft\perfect_sum.cs" />
+    <Compile Include="microsoft\coin_change.cs" />
+    <Compile Include="amazon\longest_common_substring.cs" />
+    <Compile Include="microsoft\minimum_points_to_reach_destination.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -61,7 +96,6 @@
     <Folder Include="google\easy\" />
     <Folder Include="google\medium\" />
     <Folder Include="microsoft\" />
-    <Folder Include="microsoft\medium\" />
     <Folder Include="amazon\" />
   </ItemGroup>
 </Project>
