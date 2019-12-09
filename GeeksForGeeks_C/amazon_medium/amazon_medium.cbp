@@ -54,6 +54,7 @@
 		<Unit filename="maximum_tip_calculator.h" />
 		<Unit filename="merge_k_lists.h" />
 		<Unit filename="min_rope_cost.h" />
+		<Unit filename="next_largest_element.h" />
 		<Unit filename="number_following_pattern.h" />
 		<Unit filename="numbers_to_words.h" />
 		<Unit filename="rat_in_a_maze.h" />
