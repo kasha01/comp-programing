@@ -89,6 +89,21 @@
     <Compile Include="microsoft\coin_change.cs" />
     <Compile Include="amazon\longest_common_substring.cs" />
     <Compile Include="microsoft\minimum_points_to_reach_destination.cs" />
+    <Compile Include="amazon\array_pair_sum_divisibility_problem.cs" />
+    <Compile Include="microsoft\print_pattern.cs" />
+    <Compile Include="amazon\subset_sum_problem.cs" />
+    <Compile Include="amazon\stock_span_problem.cs" />
+    <Compile Include="microsoft\string_ignorance.cs" />
+    <Compile Include="microsoft\add_binary_strings.cs" />
+    <Compile Include="microsoft\minimum_element_in_a_sorted_rotated_array.cs" />
+    <Compile Include="microsoft\find_an_element_in_bitonic_array.cs" />
+    <Compile Include="microsoft\column_name_from_a_given_column_number.cs" />
+    <Compile Include="microsoft\carry_counter.cs" />
+    <Compile Include="microsoft\longest_distinct_characters_in_string.cs" />
+    <Compile Include="microsoft\regex_matching.cs" />
+    <Compile Include="microsoft\lucky_number.cs" />
+    <Compile Include="microsoft\buildings_receiving_sunlight.cs" />
+    <Compile Include="microsoft\nearest_multiple_of_10.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

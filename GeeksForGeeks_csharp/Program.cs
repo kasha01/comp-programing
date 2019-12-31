@@ -36,6 +36,7 @@ namespace GeeksForGeeks_csharp
 
 		public static void Main (string[] args)
 		{
+			
 		}
 	}
 }
