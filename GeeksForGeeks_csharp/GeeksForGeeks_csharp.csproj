@@ -104,6 +104,7 @@
     <Compile Include="microsoft\lucky_number.cs" />
     <Compile Include="microsoft\buildings_receiving_sunlight.cs" />
     <Compile Include="microsoft\nearest_multiple_of_10.cs" />
+    <Compile Include="facebook\Decode the pattern.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -112,5 +113,6 @@
     <Folder Include="google\medium\" />
     <Folder Include="microsoft\" />
     <Folder Include="amazon\" />
+    <Folder Include="facebook\" />
   </ItemGroup>
 </Project>

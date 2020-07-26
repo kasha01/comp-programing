@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="facebook_coding_practise" />
+		<Unit filename="facebook_coding_practise.h" />
 		<Unit filename="google_longest_path_equal_labels.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="min_number_of_jumps_O_n.h" />

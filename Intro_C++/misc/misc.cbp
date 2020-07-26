@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="microsoft" />
+		<Option title="misc" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/microsoft" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/misc" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/microsoft" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/misc" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -32,15 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="circular_tour.h" />
-		<Unit filename="common_elements.h" />
-		<Unit filename="connect_nodes_at_same_level.h" />
-		<Unit filename="count_number_subtrees_having_given_sum.h" />
-		<Unit filename="longest_even_length_substring.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="merge_k_sorted_arrays.h" />
-		<Unit filename="string_comparison.h" />
-		<Unit filename="word_wrap.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

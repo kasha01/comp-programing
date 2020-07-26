@@ -36,6 +36,7 @@
 		<Unit filename="betting_game.h" />
 		<Unit filename="binary_string.h" />
 		<Unit filename="bottom_view_binary_tree.h" />
+		<Unit filename="check_bst.h" />
 		<Unit filename="combination_sum.h" />
 		<Unit filename="combination_sum_2.h" />
 		<Unit filename="construct_binary_tree_from_parent_array.h" />
@@ -51,6 +52,7 @@
 		<Unit filename="length_largest_region_of_1.h" />
 		<Unit filename="longest_palindrome_substring.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="maximum_difference_between_node_and_its_ancestor.h" />
 		<Unit filename="maximum_tip_calculator.h" />
 		<Unit filename="merge_k_lists.h" />
 		<Unit filename="min_rope_cost.h" />

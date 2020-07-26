@@ -44,6 +44,8 @@
 		<Unit filename="hungarian.h" />
 		<Unit filename="interleaved_string.h" />
 		<Unit filename="largest_word_in_dic.h" />
+		<Unit filename="linked_list_reverse_half" />
+		<Unit filename="linked_list_reverse_half.h" />
 		<Unit filename="longest_k_unique_char.h" />
 		<Unit filename="longest_valid_parentheses.h" />
 		<Unit filename="main.cpp" />

@@ -68,6 +68,7 @@
 		<Unit filename="shortest_common_subsequence.h" />
 		<Unit filename="sort_a_stack.h" />
 		<Unit filename="sum_of_digits.h" />
+		<Unit filename="symmetric_tree.h" />
 		<Unit filename="total_number_of_non_decreasing_int.h" />
 		<Unit filename="ugly_number.h" />
 		<Extensions>
