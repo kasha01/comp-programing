@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace misc
 {
@@ -6,7 +7,6 @@ namespace misc
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
 		}
 	}
 }

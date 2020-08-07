@@ -35,6 +35,22 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recursion\print_all_possible_combinations_of_r_elements_in_a_given_array_of_size_n.cs" />
+    <Compile Include="recursion\generate_all_possible_sorted_arrays_from_alternate_elements_of_two_given_sorted_arrays.cs" />
+    <Compile Include="recursion\sum_triangle_from_array.cs" />
+    <Compile Include="recursion\sort_a_stack_using_recursion.cs" />
+    <Compile Include="recursion\power_set_in_lexicographic_order.cs" />
+    <Compile Include="recursion\combinations_in_a_string_of_digits.cs" />
+    <Compile Include="recursion\generate_all_binary_strings_without_consecutive_1s.cs" />
+    <Compile Include="recursion\all_possible_binary_numbers_of_length_n_with_equal_sum_in_both_halves.cs" />
+    <Compile Include="recursion\additive_sequence.cs" />
+    <Compile Include="recursion\recursive_solution_to_count_substrings_with_same_first_and_last_characters.cs" />
+    <Compile Include="recursion\print_all_possible_strings_of_length_k_that_can_be_formed_from_a_set_of_n_characters.cs" />
+    <Compile Include="recursion\partition_given_string_in_such_manner_that_i’th_substring_is_sum_of_%28i-1%29th_and_%28i-2%29th_substring.cs" />
+    <Compile Include="recursion\print_all_possible_expressions_that_evaluate_to_a_target.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="recursion\" />
+  </ItemGroup>
 </Project>
