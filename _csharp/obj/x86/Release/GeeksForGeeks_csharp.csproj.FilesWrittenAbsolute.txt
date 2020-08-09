@@ -1,0 +1,5 @@
+/home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/bin/Release/GeeksForGeeks_csharp.exe.mdb
+/home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/bin/Release/GeeksForGeeks_csharp.exe
+/home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/obj/x86/Release/GeeksForGeeks_csharp.exe
+/home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/obj/x86/Release/GeeksForGeeks_csharp.exe.mdb
