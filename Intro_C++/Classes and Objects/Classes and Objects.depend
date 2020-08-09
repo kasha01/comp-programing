@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1465447974 source:f:\github\codeblocks\intro_c++\classes and objects\main.cpp
-	<cmath>
-	<cstdio>
-	<vector>
-	<iostream>
-	<algorithm>
-	<cassert>
-

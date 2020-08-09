@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1466567895 source:f:\github\codeblocks\intro_c++\vector-sort\main.cpp
-	<cmath>
-	<cstdio>
-	<vector>
-	<iostream>
-	<algorithm>
-
