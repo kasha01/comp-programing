@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1513057006 source:f:\github\codeblocks\interviewq\asked_amazon_interview\main.cpp
-	<iostream>
-	<vector>
-	<cmath>
-	<algorithm>
-	<climits>
-	<sstream>
-
