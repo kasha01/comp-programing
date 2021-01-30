@@ -3,19 +3,19 @@
 // https://leetcode.com/problems/longest-univalue-path/
 namespace _csharp
 {
-	public class TreeNode {
-		public int val;
-		public TreeNode left;
-		public TreeNode right;
-		public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
-			this.val = val;
-			this.left = left;
-			this.right = right;
-		}
-	}
-
 	public class longest_univalue_path
 	{
+		class TreeNode {
+			public int val;
+			public TreeNode left;
+			public TreeNode right;
+			public TreeNode(int val=0, TreeNode left=null, TreeNode right=null) {
+				this.val = val;
+				this.left = left;
+				this.right = right;
+			}
+		}
+
 		public static void driver ()
 		{
 			TreeNode root = new TreeNode (5);
@@ -63,4 +63,3 @@ namespace _csharp
 		}
 	}
 }
-

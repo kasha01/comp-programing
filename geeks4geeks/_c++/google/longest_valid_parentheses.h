@@ -24,12 +24,17 @@ void mt()
                 int iclose = i;
                 st.pop();
 
-                if(iclose-1>=0 && iclose-1!=iopen && iclose-1-memo[iclose-1] > iopen){
+                // check for sum case inside parentheses. e.g. (())
+                if(iclose-1>=0 && iclose-1!=iopen && iclose-(memo[iclose-1]*2) > iopen){
                     sum = sum + memo[iclose-1];
                 }
+
+                // check for sum case of valid parentheses on my left hand side. e.g. () + (())
                 if(iopen-1 >=0){
                     sum = sum + memo[iopen-1];
                 }
+
+                // this valid parentheses. i know it is valid because it is a ')' coupled with a '(' from the stack.
                 sum = sum + 1;
             }
         }
