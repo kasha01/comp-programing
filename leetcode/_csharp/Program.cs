@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections;
+using System.Linq;
 
 namespace _csharp
 {
@@ -8,13 +9,7 @@ namespace _csharp
 	{
 		public static void Main (string[] args)
 		{
-			driver ();
-		}
-
-		static void driver() {
-			int[][] trips = new int[2][];
-			trips [0] = new int[]{ 2, 1, 5 };
-			trips [1] = new int[]{ 3, 5, 7 };
+			
 		}
 	}
 }

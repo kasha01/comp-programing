@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="GeeksForGeeks_csharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="misc/print_all_possible_combinations_of_r_elements_in_a_given_array_of_size_n.cs">
+    <Files>
+      <File FileName="misc/print_all_possible_combinations_of_r_elements_in_a_given_array_of_size_n.cs" Line="4" Column="107" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
