@@ -1,19 +1,62 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#define MAX 100
+#define RANGE 255
 
- long long sum(int n){
-        long long ans = 0;
-        if(n<=0) return 0;
-        ans = n+1;
-        ans = ans*n;
-        ans = ans/2;
-        return ans;
-    }
+// The main function that sort
+// the given string arr[] in
+// alphabetical order
+void countSort(int arr[])
+{
 
+	// Create a count array to store count of individual
+	// characters and initialize count array as 0
+	int count[RANGE + 1], i;
+	memset(count, 0, sizeof(count));
+
+	// Store count of each character
+	for (i = 0; arr[i]; ++i)
+		++count[arr[i]];
+
+	// Change count[i] so that count[i] now contains actual
+	// position of this character in output array
+	for (i = 1; i <= RANGE; ++i)
+		count[i] += count[i - 1];
+
+	// Build the output character array
+	for (i = 0; arr[i]; ++i) {
+		output[count[arr[i]] - 1] = arr[i];
+		--count[arr[i]];
+	}
+
+	/*
+	For Stable algorithm
+	for (i = sizeof(arr)-1; i>=0; --i)
+	{
+		output[count[arr[i]]-1] = arr[i];
+		--count[arr[i]];
+	}
+
+	For Logic : See implementation
+	*/
+
+	// Copy the output array to arr, so that arr now
+	// contains sorted characters
+	for (i = 0; arr[i]; ++i)
+		arr[i] = output[i];
+}
+
+// Driver code
 int main()
 {
-	cout << sum(5);
-	vector<int> v = {3,2,1,5,6,4};
-    return 0;
+	char arr[] = "geeksforgeeks";
+
+	countSort(arr);
+
+	cout << "Sorted character array is " << arr;
+	return 0;
 }
+
+// This code is contributed by rathbhupendra
+

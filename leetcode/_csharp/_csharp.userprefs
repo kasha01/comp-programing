@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="10" Column="42" />
+      <File FileName="Program.cs" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -10,6 +10,7 @@
       <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/medium/_621_task_scheduler.cs" line="42" column="1" />
       <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/medium/_621_task_scheduler.cs" line="58" column="1" />
       <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/easy/Sort.cs" line="9" column="1" />
+      <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/medium/_907_sum of subarray minimums.cs" line="10" column="9" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

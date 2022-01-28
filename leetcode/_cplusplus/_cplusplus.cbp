@@ -32,13 +32,24 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="295_find_median_from_data_stream." />
+		<Unit filename="_1249_minimum_remove_to_make_valid_parentheses" />
+		<Unit filename="_1249_minimum_remove_to_make_valid_parentheses.h" />
 		<Unit filename="_1801_number_of_orders_in_the_backlog.h" />
+		<Unit filename="_1872_minimum_cost_to_connect_sticks.h" />
 		<Unit filename="_215_kth_largest_element_in_an_array.h" />
 		<Unit filename="_239_sliding_window_maximum.h" />
+		<Unit filename="_295_find_median_from_data_stream.h" />
 		<Unit filename="_347_top_k_frequent_elements.h" />
+		<Unit filename="_609_two_sum_less_than_or_equal_to_target.h" />
+		<Unit filename="_663_walls_and_gates.h" />
+		<Unit filename="_692_top_k_frequent_words.h" />
 		<Unit filename="_767_reorganize_string.h" />
+		<Unit filename="_903_range_addition.h" />
 		<Unit filename="_919_meeting_rooms_ii.h" />
+		<Unit filename="_920_meeting_rooms.h" />
 		<Unit filename="_973_k_closest_points_to_origin.h" />
+		<Unit filename="_linked_list_sum.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

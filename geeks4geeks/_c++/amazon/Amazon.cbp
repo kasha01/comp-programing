@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="_find_all pairs_with_a_given_sum .h" />
 		<Unit filename="add_greater_values_node_bst.h" />
 		<Unit filename="check_if_four_points_form_square.h" />
 		<Unit filename="check_mirror_in_narry_tree.h" />

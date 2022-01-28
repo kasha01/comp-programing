@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 
 // https://leetcode.com/problems/course-schedule-ii/
 namespace _csharp
@@ -11,47 +12,42 @@ namespace _csharp
 			Dictionary<int, List<int>> map = new Dictionary<int,List<int>>();
 
 			for(int i=0; i<prerequisites.Length; ++i){
-				int dependencyCourse = prerequisites[i][1];
-				int course = prerequisites[i][0];
+				int src = prerequisites[i][1];
+				int dest = prerequisites[i][0];
 
-				if(!map.ContainsKey(course)){
-					map.Add(course, new List<int>());
-				}
+				if(!map.ContainsKey(src))
+					map.Add(src,new List<int>());                
 
-				map[course].Add(dependencyCourse);
-				indegree[dependencyCourse]++;
-			}
+				map[src].Add(dest);
+				indegree[dest]++;
+			}       
 
 			Queue<int> qu = new Queue<int>();
-			for(int i=0; i<numCourses; ++i){
-				// add all courses that have 0 indegree (leaf courses) with no dependency on them
+			for(int i=0;i<numCourses;++i){
 				if(indegree[i]==0)
-					qu.Enqueue(i);
+					qu.Enqueue(i);                
 			}
 
-			int n = numCourses;
-			int[] result = new int[numCourses];
+			int k = 0; int[] result = new int[numCourses];
 			while(qu.Count > 0){
-				int node = qu.Dequeue();
-				result[n-1] = node;
-				--n;
+				var node = qu.Dequeue();
+				result[k] = node; ++k;
 
-				// there are no courses that depend on course (node). so skip it.
 				if(!map.ContainsKey(node))
 					continue;
 
-				var dependencyCourses = map[node];
-				foreach(int x in dependencyCourses){
-					indegree[x]--;
-					if(indegree[x] == 0){
-						// course now has no other courses depending on it
-						qu.Enqueue(x);
-					}
+				var list = map[node];
+				foreach(var course in list){
+					indegree[course]--;
+					if(indegree[course]==0)
+						qu.Enqueue(course);
 				}
 			}
 
-			// n=0 => all courses were added which means I had no cycle and solution exists.
-			return n==0 ? result : new int[0];
+			if(k==numCourses)
+				return result;
+
+			return new int[0];
 		}
 	}
 }
