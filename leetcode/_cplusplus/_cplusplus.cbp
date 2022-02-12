@@ -44,6 +44,9 @@
 		<Unit filename="_609_two_sum_less_than_or_equal_to_target.h" />
 		<Unit filename="_663_walls_and_gates.h" />
 		<Unit filename="_692_top_k_frequent_words.h" />
+		<Unit filename="_703_kth_largest_element_in_a_stream" />
+		<Unit filename="_703_kth_largest_element_in_a_stream.h" />
+		<Unit filename="_760_binary_tree_right_side_view.h" />
 		<Unit filename="_767_reorganize_string.h" />
 		<Unit filename="_903_range_addition.h" />
 		<Unit filename="_919_meeting_rooms_ii.h" />
