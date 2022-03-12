@@ -4,10 +4,11 @@
 /* *
  * Digits in increasing order like 149, 468, 789, etc. He does not like numbers that don't follow this rule like 543, 664, 299, etc.
  * Given a number N as input, find the largest number less than or equal to N which will appeal to John's liking.
+ * all digits must be in strictly increasing order.
 */
 namespace _csharp
 {
-	public class _john_liking
+	public class _738_monotone_increasing_digits_amazon_twist
 	{
 		public static void test()
 		{

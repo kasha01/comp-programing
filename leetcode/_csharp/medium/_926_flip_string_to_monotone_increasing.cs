@@ -33,8 +33,9 @@ namespace _csharp
 			}
 
 			int flips = int.MaxValue;
-			for(int k=0;k<=n;++k){
-				int f = all_zero[k] + all_one[k+1];
+			for(int k=1;k<=n;++k){
+				// k is my split point (1st "1").
+				int f = all_zero[k-1] + all_one[k+1];
 				flips = Math.Min(flips, f);
 			}
 

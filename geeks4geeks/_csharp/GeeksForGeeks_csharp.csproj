@@ -119,6 +119,7 @@
     <Compile Include="misc\recursion\sort_a_stack_using_recursion.cs" />
     <Compile Include="misc\recursion\sum_triangle_from_array.cs" />
     <Compile Include="misc\print_all_possible_combinations_of_r_elements_in_a_given_array_of_size_n.cs" />
+    <Compile Include="amazon\smallest_positive_missing_number.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

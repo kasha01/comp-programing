@@ -45,67 +45,27 @@ namespace _csharp
 						return moves;
 
 					// up
-					if(zero_index-3 >= 0){
+					if(zero_index >= 3){
 						int x = zero_index-3;
-						var new_state = new char[6];
-						Array.Copy(state,new_state,6);
-
-						char temp = new_state[x];
-						new_state[x] = '0';
-						new_state[zero_index] = temp;
-						string s = new String(new_state);
-						if(!visited.Contains(s)){
-							qu.Enqueue(new Node(x, new_state));
-							visited.Add(new String(new_state));
-						}                    
+						handleNewState(x,zero_index,state,qu,visited);                    
 					}
 
 					// down
-					if(zero_index+3 < 6){
+					if(zero_index < 3){
 						int x = zero_index+3;
-						var new_state = new char[6];
-						Array.Copy(state,new_state,6);
-
-						char temp = new_state[x];
-						new_state[x] = '0';
-						new_state[zero_index] = temp;
-						string s = new String(new_state);
-						if(!visited.Contains(s)){
-							qu.Enqueue(new Node(x, new_state));
-							visited.Add(new String(new_state));
-						}                    
+						handleNewState(x,zero_index,state,qu,visited);
 					}
 
 					// left
 					if( ((zero_index)%3)-1 >=0){
 						int x = zero_index-1;
-						var new_state = new char[6];
-						Array.Copy(state,new_state,6);
-
-						char temp = new_state[x];
-						new_state[x] = '0';
-						new_state[zero_index] = temp;
-						string s = new String(new_state);
-						if(!visited.Contains(s)){
-							qu.Enqueue(new Node(x, new_state));
-							visited.Add(new String(new_state));
-						}                    
+						handleNewState(x,zero_index,state,qu,visited);
 					}
 
 					// right
 					if(((zero_index)%3)+1 < 3){
 						int x = zero_index+1;
-						var new_state = new char[6];
-						Array.Copy(state,new_state,6);
-
-						char temp = new_state[x];
-						new_state[x] = '0';
-						new_state[zero_index] = temp;
-						string s = new String(new_state);
-						if(!visited.Contains(s)){
-							qu.Enqueue(new Node(x, new_state));
-							visited.Add(new String(new_state));
-						}                    
+						handleNewState(x,zero_index,state,qu,visited);
 					}               
 				}
 
@@ -113,6 +73,20 @@ namespace _csharp
 			}
 
 			return -1;
+		}
+
+		private void handleNewState(int x, int zero_index, char[] state, Queue<Node> qu, HashSet<string> visited){
+			var new_state = new char[6];
+			Array.Copy(state,new_state,6);
+
+			char temp = new_state[x];
+			new_state[x] = '0';
+			new_state[zero_index] = temp;
+			string s = new String(new_state);
+			if(!visited.Contains(s)){
+				qu.Enqueue(new Node(x, new_state));
+				visited.Add(new String(new_state));
+			}
 		}
 	}
 }

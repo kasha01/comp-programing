@@ -4,59 +4,96 @@ using namespace std;
 #define MAX 100
 #define RANGE 255
 
-// The main function that sort
-// the given string arr[] in
-// alphabetical order
-void countSort(int arr[])
-{
 
-	// Create a count array to store count of individual
-	// characters and initialize count array as 0
-	int count[RANGE + 1], i;
-	memset(count, 0, sizeof(count));
+int getEqualOrGreater(vector<int> v, int target){
+	int lo = 0; int hi=v.size()-1; int ans=-1;
 
-	// Store count of each character
-	for (i = 0; arr[i]; ++i)
-		++count[arr[i]];
+	while(lo<=hi){
+		int mid = lo + ((hi-lo)/2);
 
-	// Change count[i] so that count[i] now contains actual
-	// position of this character in output array
-	for (i = 1; i <= RANGE; ++i)
-		count[i] += count[i - 1];
-
-	// Build the output character array
-	for (i = 0; arr[i]; ++i) {
-		output[count[arr[i]] - 1] = arr[i];
-		--count[arr[i]];
+		if(v[mid] > target){
+			ans = v[mid];
+			hi = mid-1;
+		}
+		else if(v[mid] < target){
+			lo = mid + 1;
+		}
+		else{
+			return v[mid];
+		}
 	}
 
-	/*
-	For Stable algorithm
-	for (i = sizeof(arr)-1; i>=0; --i)
-	{
-		output[count[arr[i]]-1] = arr[i];
-		--count[arr[i]];
-	}
-
-	For Logic : See implementation
-	*/
-
-	// Copy the output array to arr, so that arr now
-	// contains sorted characters
-	for (i = 0; arr[i]; ++i)
-		arr[i] = output[i];
+	return ans;
 }
 
-// Driver code
+int getSmaller(vector<int> v, int target){
+	int lo = 0; int hi=v.size()-1; int ans=-1;
+
+	while(lo<=hi){
+		int mid = lo + ((hi-lo)/2);
+
+		// excluding target because that is the end of meeting.
+		if(v[mid] < target){
+			ans = v[mid];
+			lo = mid+1;
+		}
+		else{
+			hi = mid - 1;
+		}
+	}
+
+	return ans;
+}
+
+vector<bool> meetingRoomIII(vector<vector<int>> &intervals, int rooms, vector<vector<int>> &ask) {
+	int maxPoint = -1;
+	for(int i=0;i<intervals.size();++i){
+		maxPoint = max(maxPoint, intervals[i][1]);
+	}
+
+	vector<int> meetings(maxPoint+1,0);
+	for(int i=0;i<intervals.size();++i){
+		meetings[intervals[i][0]]++;
+		meetings[intervals[i][1]]--;
+	}
+
+	vector<int> maxRooms;
+	for(int i=1;i<=maxPoint;++i){
+		meetings[i] = meetings[i] + meetings[i-1];
+		if(meetings[i] == rooms){
+			// at this point i, the count of rooms occupied reached max limit rooms
+			maxRooms.push_back(i);
+		}
+	}
+
+	vector<bool> result;
+	for(int i=0;i<ask.size();++i){
+		int ask_l = ask[i][0];
+		int ask_r = ask[i][1];
+
+		int l = getEqualOrGreater(maxRooms, ask_l);
+		int r = getSmaller(maxRooms, ask_r);
+
+		result.push_back(false);
+
+		if(l>=0 && l>=ask_l && l<ask_r)
+			result[i] = false;
+		else if(r>=0 && r>ask_l && r<ask_r)
+			result[i] = false;
+		else
+			result[i] = true;
+
+		cout << (result[i] ? "true" : "false") << " ";
+	}
+
+
+	return result;
+}
+
 int main()
 {
-	char arr[] = "geeksforgeeks";
-
-	countSort(arr);
-
-	cout << "Sorted character array is " << arr;
+    vector<vector<int>> intervals =  {{1, 3}, {4, 6}, {6, 8}, {9, 11}, {6, 9}, {1, 3}, {4, 10}};
+    vector<vector<int>> ask = {{1, 9}, {2, 6}, {7, 9}, {3, 5}, {3, 9}, {2, 4}, {7, 10}, {5, 9}, {3, 10}, {9, 10}};
+    auto result = meetingRoomIII(intervals, 3, ask);
 	return 0;
 }
-
-// This code is contributed by rathbhupendra
-

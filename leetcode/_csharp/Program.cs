@@ -8,7 +8,26 @@ namespace _csharp
 	class MainClass
 	{
 		public static void Main (string[] args)
-		{
+		{			
+			var c = new _957_prison_cells_after_n_days ();
+
+			var v = new int[5][];
+			v [0] = new int[]{ 1, 2, 0, 1 };
+			v [1] = new int[]{ 2, 0 };
+			v [2] = new int[]{ 2, 0 };
+			v [3] = new int[]{ 1, 2 };
+			v [4] = new int[]{ 0, 1, 0 };
+
+			Console.WriteLine (c.PrisonAfterNDays (new int[]{ 0, 1, 0, 1, 1, 0, 0, 1 }, 7));
+
+			Console.WriteLine (1 << 0);
+			var map = new Dictionary<Tuple<int,int>, int> ();
+			map.Add (Tuple.Create (1, 1),1);
+			map.Add (Tuple.Create (2, 1),1);
+
+			if (map.ContainsKey (Tuple.Create (1, 2)))
+				Console.WriteLine (1);
+
 			int[,] ar = new int[,]{ { 1, 2 } };
 
 			int[][] arr = new int[5][];
@@ -18,36 +37,12 @@ namespace _csharp
 			arr [3] = new int[]{ 0, 1, 1 };
 			arr [4] = new int[]{ 0, 0, 0 };
 
-			var ax = new char[]{ '1', '2' };
-			var axx = new char[2];
-			Array.Copy (ax, axx, 2);
-			axx [1] = 'a';
+			Array.Sort (arr [0], (x, y) => CompareMe (x, y));
 
-			int k = 1 + '0';
-			char v = Convert.ToChar (k);
-			Console.WriteLine (v);
-
-			Console.WriteLine (new String (ax));
-			Console.WriteLine (new String (axx));
-
-			string ss = new string (ax);
-
-			HashSet<int> set = new HashSet<int> ();
-			set.Add (1);
-			set.Add (3);
-			set.Add (2);
-
-
-			List<int> list = new List<int> ();
-			list.Add (0);
-			list.Add (1);
-			list.Sort ((a, b) => CompareMe (a, b, arr));
 			int[][] d = { new int[2]{ -1, 0 }, new int[2]{ 1, 0 }, new int[2]{ 0, -1 }, new int[2]{ 0, 1 } };
 		}
 
-		public static int CompareMe(int a, int b, int[][] arr){
-			Console.WriteLine (arr [a] [a]);
-			Console.WriteLine (arr [b] [b]);
+		public static int CompareMe(int a, int b){
 			return 1;
 		}
 	}
