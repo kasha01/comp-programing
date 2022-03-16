@@ -9,7 +9,9 @@ namespace _csharp
 	{
 		public static void Main (string[] args)
 		{			
-			var c = new _957_prison_cells_after_n_days ();
+			//Console.WriteLine (Math.Log10 (100) / Math.Log10 (2));
+
+			//var c = new _amazon_oa_min_absolute_diff_between_two_numbers ();
 
 			var v = new int[5][];
 			v [0] = new int[]{ 1, 2, 0, 1 };
@@ -18,9 +20,7 @@ namespace _csharp
 			v [3] = new int[]{ 1, 2 };
 			v [4] = new int[]{ 0, 1, 0 };
 
-			Console.WriteLine (c.PrisonAfterNDays (new int[]{ 0, 1, 0, 1, 1, 0, 0, 1 }, 7));
-
-			Console.WriteLine (1 << 0);
+			//Console.WriteLine (1 << 0);
 			var map = new Dictionary<Tuple<int,int>, int> ();
 			map.Add (Tuple.Create (1, 1),1);
 			map.Add (Tuple.Create (2, 1),1);

@@ -6,6 +6,29 @@ namespace _csharp
 {
 	public class _1710_maximum_units_on_a_truck
 	{
+		// this is an O(N) solution.
+		public int MaximumUnits_2(int[][] boxTypes, int truckSize) {
+			int maxUnits = 1000;
+			var freq_units = new int[maxUnits+1];   // number of boxes that have i units
+
+			foreach(var box in boxTypes){
+				int num_boxes = box[0];
+				int num_units_in_each_box = box[1];
+
+				freq_units[num_units_in_each_box] = freq_units[num_units_in_each_box] + num_boxes;
+			}
+
+			int sum = 0;
+			for(int units=maxUnits;units>=0 && truckSize>0;--units){
+				int num_boxes_i_can_load_in_truck = Math.Min(freq_units[units], truckSize);
+				sum = sum + (num_boxes_i_can_load_in_truck * units);
+				truckSize = truckSize - num_boxes_i_can_load_in_truck;
+			}
+
+			return sum;
+		}
+
+		// O(N LOG N) solution
 		public int MaximumUnits(int[][] boxTypes, int truckSize) {
 			// number of boxes | number of units per box.
 			int n = boxTypes.Length;

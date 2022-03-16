@@ -15,7 +15,6 @@ namespace _csharp
 				return;
 			}
 
-
 			int i = 0; int j = k - 1; int d = int.MaxValue;
 			while (j < n) {
 				d = Math.Min (d, arr [j] - arr [i] + 1);

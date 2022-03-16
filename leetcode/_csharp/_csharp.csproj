@@ -353,6 +353,11 @@
     <Compile Include="hard\_1923_longest_common_subpath.cs" />
     <Compile Include="medium\_863_all_nodes_distance_k_in_binary_tree.cs" />
     <Compile Include="medium\_957_prison_cells_after_n_days.cs" />
+    <Compile Include="other\_amazon_string_minimization.cs" />
+    <Compile Include="other\_amazon_oa_password_strength.cs" />
+    <Compile Include="other\_amazon_oa_car_truck_collisioin.cs" />
+    <Compile Include="other\_amazon_oa_min_absolute_diff_between_two_numbers.cs" />
+    <Compile Include="notag\_amazon_oa_student_turnstile.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
