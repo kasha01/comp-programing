@@ -5,29 +5,28 @@
 
 class Solution {
 public:
+    /**
+     * @param intervals: an array of meeting time intervals
+     * @return: the minimum number of conference rooms required
+     */
     int minMeetingRooms(vector<Interval> &intervals) {
         // Write your code here
-        vector<int> start; vector<int> end;
+        vector<pair<int,int>> v;
         int n = intervals.size();
         for(int i=0;i<n;++i){
-            start.push_back(intervals[i].start);
-            end.push_back(intervals[i].end);
+            v.push_back(make_pair(intervals[i].start,1));
+            v.push_back(make_pair(intervals[i].end,-1));
         }
 
-        sort(start.begin(),start.end());
-        sort(end.begin(),end.end());
+        sort(v.begin(),v.end());
 
-        int i=0; int j=0; int maxRooms = 0; int finalRooms=0;
-        while(i<n && j<n){
-            if(start[i] < end[j]){
-                ++maxRooms; ++i;
-            }
-            else{
-                --maxRooms; ++j;
-            }
-            finalRooms = max(maxRooms,finalRooms);
+        int maxRooms = 0; int sum=0;
+        for(int i=0;i<v.size();++i){
+            sum = sum + v[i].second;
+            maxRooms = max(maxRooms, sum);
         }
-        return finalRooms;
+
+        return maxRooms;
     }
 };
 

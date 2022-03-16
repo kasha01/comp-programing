@@ -37,7 +37,8 @@ namespace _csharp
 
 			if(a.Item1 > b.Item1) return 1;
 
-			// sort by passengers (b/c I want to drop passengers first before pick new ones at the same point)
+			// sort by passengers (b/c I want to drop largest passengers first (passengers count here are in -ve) 
+			// before pick new ones at the same end point)
 			if(a.Item2 < b.Item2) return -1;
 			if(a.Item2 > b.Item2) return 1;
 
