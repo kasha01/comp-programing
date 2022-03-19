@@ -372,6 +372,7 @@
     <Compile Include="easy\_1886_determine_whether_matrix_can_be_obtained_by_rotation.cs" />
     <Compile Include="medium\_139_word_break.cs" />
     <Compile Include="medium\_18_4sum.cs" />
+    <Compile Include="medium\_688_knight_probability_in_chessboard.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
