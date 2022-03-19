@@ -8,10 +8,8 @@ namespace _csharp
 	class MainClass
 	{
 		public static void Main (string[] args)
-		{			
+		{
 			//Console.WriteLine (Math.Log10 (100) / Math.Log10 (2));
-
-			//var c = new _amazon_oa_min_absolute_diff_between_two_numbers ();
 
 			var v = new int[5][];
 			v [0] = new int[]{ 1, 2, 0, 1 };

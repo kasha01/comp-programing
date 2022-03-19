@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="15" Column="1" />
-      <File FileName="other/_amazon_oa_min_absolute_diff_between_two_numbers.cs" Line="15" Column="23" />
+      <File FileName="Program.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

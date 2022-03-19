@@ -64,6 +64,8 @@
 		<Unit filename="_919_meeting_rooms_ii.h" />
 		<Unit filename="_920_meeting_rooms.h" />
 		<Unit filename="_973_k_closest_points_to_origin.h" />
+		<Unit filename="_amaon_oa_jon_backyard_tree_cutting.h" />
+		<Unit filename="_amazon_oa_minimum_number_of_divisions.h" />
 		<Unit filename="_linked_list_sum.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

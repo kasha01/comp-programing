@@ -358,6 +358,20 @@
     <Compile Include="other\_amazon_oa_car_truck_collisioin.cs" />
     <Compile Include="other\_amazon_oa_min_absolute_diff_between_two_numbers.cs" />
     <Compile Include="notag\_amazon_oa_student_turnstile.cs" />
+    <Compile Include="other\_amazon_oa_farmer_wheel_efficient_harvest.cs" />
+    <Compile Include="other\_amazon_oa_alphabet_encryption_wheel.cs" />
+    <Compile Include="medium\_853_car_fleet.cs" />
+    <Compile Include="other\_amazon_oa_secret_array.cs" />
+    <Compile Include="other\_amazon_oa_optimal_utlization_two_sum.cs" />
+    <Compile Include="other\_amazon_oa_movies_on_flight.cs" />
+    <Compile Include="medium\_47_permutations_ii.cs" />
+    <Compile Include="medium\_40_combination_sum_ii.cs" />
+    <Compile Include="medium\_46_permutations.cs" />
+    <Compile Include="medium\_90_subsets_ii.cs" />
+    <Compile Include="medium\_78_subsets.cs" />
+    <Compile Include="easy\_1886_determine_whether_matrix_can_be_obtained_by_rotation.cs" />
+    <Compile Include="medium\_139_word_break.cs" />
+    <Compile Include="medium\_18_4sum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
