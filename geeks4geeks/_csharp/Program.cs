@@ -1,81 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
 
-// check let's play for 2 dim input array
 namespace GeeksForGeeks_csharp
 {
 	class MainClass
 	{
-		public void init ()
-		{
-			int t = Int16.Parse (Console.ReadLine ());
-			while (t > 0) {
-				t--;
-				int n = Int32.Parse (Console.ReadLine ());
-				string _items = Console.ReadLine ();
-				string[] items = _items.Split (' ');
-			}
-		}
-
-		public static void init_arr ()
-		{
-			int t = Int16.Parse (Console.ReadLine ());
-			while (t > 0) {
-				t--;
-				int n = Int32.Parse (Console.ReadLine ());
-				string _items = Console.ReadLine ();
-				string[] items = _items.Split (' ');
-
-				int[] arr = new int[n];
-				for (int i = 0; i < n; ++i) {
-					arr [i] = Int32.Parse (items [i]);
-				}
+		class Node{
+			public int val;
+			public Node left;
+			public Node right;
+			public Node(int v){
+				this.val = v;
 			}
 		}
 
 		public static void Main (string[] args)
 		{
-			int r = solve ("T^F|F");
-			Console.WriteLine (r);
+			var node1 = new Node (10);
+			var node2 = new Node (12);
+			var node3 = new Node (15);
+			var node4 = new Node (25);
+			var node5 = new Node (30);
+			var node6 = new Node (36);
+
+			node1.left = node2;
+			node1.right = node3;
+			node2.left = node4;
+			node2.right = node5;
+			node3.left = node6;
+
+			dfs (node1);
+
+			Console.WriteLine (head.val);
 		}
 
-		static int solve(string s){
-			int n = s.Length;
+		static Node head;
+		private static Node dfs(Node node){
+			if (node == null)
+				return null;
 
-			int[,] result = new int[n, n]; 
-			bool[,] memo = new bool[n,n];
+			if (node.left == null && node.right == null)
+				return node;
 
-			for (int i = 0; i < n; i = i + 2) {
-				memo [i, i] = s [i] == 'T' ? true : false;
-			}
-
-			for(int size = 2; size<n; size=size+2){
-				for (int start = 0; start < size - 2; start = start + 2) {
-					for (int op = start + 1; op < size - 1; op = op + 2) {
-						int i = start; int j = op - 1;
-						int x = op + 1; int y = size;
-						char oper = s [op];
-
-						if (oper == '^') {
-							memo[i,size] = memo[i,size] || (memo[i,j] ^ memo[x,y]);
-							if (memo [i, size])
-								result [i, size]++;
-						}
-						else if (oper == '|') {
-							memo[i,size] = memo[i,size] || (memo[i,j] || memo[x,y]);
-							if (memo [i, size])
-								result [i, size]++;
-						}
-						else if (oper == '&') {
-							memo[i,size] = memo[i,size] || (memo[i,j] && memo[x,y]);
-							if (memo [i, size])
-								result [i, size]++;
-						}
-					}
+			Node prev = null;
+			if (node.left != null) {
+				prev = dfs (node.left);
+				if (head == null) {
+					head = prev;
 				}
+
+				node.left = prev;
+				prev.right = node;
 			}
 
-			return (result[0, n-1]%1003)*2;
+			if (node.right != null) {
+				prev = dfs (node.right);
+				if (head == null) {
+					head = node;
+				}
+				node.right = prev;
+				prev.left = node;
+			}
+
+			return prev;
 		}
 	}
 }

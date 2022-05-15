@@ -10,7 +10,7 @@ namespace _csharp
 		}
 
 		bool ValidPalindrome(int l, int r, bool canDelete, string s) {
-			if (l > r)
+			if (l >= r)
 				return true;
 
 			if(s[l]==s[r])

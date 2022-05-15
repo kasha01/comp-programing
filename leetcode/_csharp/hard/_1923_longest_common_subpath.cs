@@ -42,10 +42,10 @@ namespace _csharp
 		private bool hashMatch(int hashLength, int[][] paths){
 			long hash = 1; long _base=165131; int p0L = paths[0].Length;
 
-			// calculate the furthest hash. i.e. for hashLength=3 -> base^2
+			// calculate the furthest hash (hash to use in exclusion). i.e. for hashLength=3 -> base^2
 			for(int i=0;i<hashLength-1;++i){
 				// notice here I put (hashLength-1) because I want to calculate hash up to power (hashLength-1).
-				// i.e if hashLength=3. I have powers (b^0, b^1, b^2). since b^0=1. so I just need b^1 and b^2. so that is two rotations.
+				// i.e if hashLength=3. I have powers (b^2, b^1, b^0) in that order. since b^0=1. so I just need b^1 and b^2. so that is two rotations.
 				hash = getMod(hash*_base);
 			}
 

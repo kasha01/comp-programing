@@ -25,10 +25,11 @@ namespace _csharp
 			}
 
 			for(int i=0;i<n;++i){
-				if(used[i] || (i>0 && used[i-1] && nums[i] == nums[i-1])) continue;
+				if(used[i]) continue;
+				if((i>0 && used[i-1] && nums[i] == nums[i-1])) continue;
 
 				used[i] = true;
-				temp.Add(nums[i]);
+				temp.Add(i);
 				backtrack(temp,used,n,nums);
 				temp.RemoveAt(temp.Count - 1);
 				used[i] = false;

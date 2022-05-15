@@ -6,7 +6,7 @@ namespace GeeksForGeeks_csharp
 {
 	public class print_all_possible_combinations_of_r_elements_in_a_given_array_of_size_n
 	{
-		public static driver(){
+		public static void driver(){
 			var l = new int[]{ 1, 2, 3, 4 };
 			Array.Sort (l);
 			backtrack (0, new List<int> (), 3, l.Length, l);

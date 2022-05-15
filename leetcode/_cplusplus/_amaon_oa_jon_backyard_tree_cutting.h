@@ -44,7 +44,8 @@ void solve(){
 	}
 
     // dp[i][j] is the minimum number of operations required to make nums[:i+1](till ith index) strictly sorted with nums[i] == j.
-    // Hence, our recurrence relation would be: dp[i][j] = abs(nums[i]-j) + min(dp[i-1][:j])
+    // where j is the desired target.
+    // Hence, our recurrence relation would be: dp[i][j] = abs(nums[i]-j) + min(dp[i-1][:j]) (0 to the desired target exclusive)
     // This 2D table can be easily converted to 1D dp[j], since we only ever need to know the i-1th state for computing ith state.
     int dp[N][maxn];
 
@@ -60,12 +61,13 @@ void solve(){
 
     for (int i=1;i<N;++i){
 		int min_so_far = INT_MAX;
-		for(int m=0;m<i;++m){
-			min_so_far = min(min_so_far, dp[i-1][m]);
+		for(int jj=0;jj<i;++jj){
+			min_so_far = min(min_so_far, dp[i-1][jj]);
 		}
 
+        // loop for desired target from i to maxn
         for (int j=i;j<maxn;++j){ // starting from i to ensure strictly increasing order
-            int kk = abs(nums[i]-j) + min_so_far;
+            // int kk = abs(nums[i]-j) + min_so_far;
             dp[i][j] = abs(nums[i]-j) + min_so_far;
             min_so_far = min(min_so_far, dp[i-1][j]);
 		}

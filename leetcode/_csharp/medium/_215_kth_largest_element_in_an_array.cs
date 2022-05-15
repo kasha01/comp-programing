@@ -47,6 +47,7 @@ namespace _csharp
 				if(kk>pivot)
 					return sortLomuto (pivot + 1, hi, arr, kk);            
 			}
+
 			// count if array becomes 1 element. lo==hi
 			return arr[lo];
 		}

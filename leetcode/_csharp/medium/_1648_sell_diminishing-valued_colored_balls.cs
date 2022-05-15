@@ -24,18 +24,18 @@ namespace _csharp
 
 				// if all colors of balls are the same value, nextValue is 0
 				int nextValue = curIndex < 0 ? 0 : inventory[curIndex];
-				// number of colors of balls with same value 
-				int numSameColor = n - 1 - curIndex;
+				// number of colors of balls with same value (number of columns)
+				int numBallsSameValue = n - 1 - curIndex;
 				// number of items to buy
-				int nums = (curValue - nextValue) * numSameColor;
+				int nums = (curValue - nextValue) * numBallsSameValue;
 				if (orders >= nums) {
-					// buy all items
-					profit = profit + (((curValue + nextValue + 1) * (curValue - nextValue)) / 2) * numSameColor;
+					// buy all items (arithmetic sum)
+					profit = profit + (((curValue + nextValue + 1) * (curValue - nextValue)) / 2) * numBallsSameValue;
 				} else {
 					// orders left is less than the number of items to buy
-					int numFullRow = orders / numSameColor;
-					int remainder = orders % numSameColor;
-					profit = profit + ((((curValue + curValue - numFullRow + 1) * numFullRow) / 2) * numSameColor);
+					int numFullRow = orders / numBallsSameValue;
+					int remainder = orders % numBallsSameValue;
+					profit = profit + ((((curValue + curValue - numFullRow + 1) * numFullRow) / 2) * numBallsSameValue);
 					profit = profit + (curValue - numFullRow) * remainder;
 				}
 				orders = orders - nums;
@@ -45,4 +45,3 @@ namespace _csharp
 		}
 	}
 }
-

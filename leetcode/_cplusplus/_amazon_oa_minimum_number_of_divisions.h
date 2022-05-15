@@ -33,7 +33,7 @@ void findMinDision(){
 
 			pq.push(steps);
 			if(pq.size() > target){
-				// if have more numbers more than target
+				// if have more numbers than target
 				pq.pop();
 			}
 

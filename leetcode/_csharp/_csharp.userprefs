@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="_csharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="fb_oa/_fb_oa_matrix_diagonal.cs">
     <Files>
-      <File FileName="Program.cs" Line="4" Column="1" />
+      <File FileName="Program.cs" Line="17" Column="4" />
+      <File FileName="fb_oa/_fb_oa_matrix_diagonal.cs" Line="33" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -12,6 +13,9 @@
       <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/easy/Sort.cs" line="9" column="1" />
       <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/medium/_907_sum of subarray minimums.cs" line="10" column="9" />
       <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/other/_amazon_oa_02_09_2022_sum_of_power_of_every_subarray.cs" line="22" column="1" />
+      <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/hard/_410_split_array_largest_sum.cs" line="55" column="1" />
+      <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/hard/_460_lfu_cache.cs" line="75" column="8" />
+      <Breakpoint file="/home/grendizer/block/cp/leetcode/_csharp/medium/_47_permutations_ii.cs" line="15" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

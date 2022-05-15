@@ -34,26 +34,26 @@ namespace _csharp
 					edges[email].Add(headEmail);
 					edges[headEmail].Add(email);
 
-					if(!emailsMap.ContainsKey(email))
-						emailsMap.Add(email,accounts[i][0]);
+					if(!emailsMap.ContainsKey(headEmail))
+						emailsMap.Add(headEmail,accounts[i][0]);
 				}
 			}
 
 			Stack<string> stack = new Stack<string>();
 			HashSet<string> visited = new HashSet<string>();
 			foreach(var kvp in emailsMap){
-				string email = kvp.Key;
-				string myEdges = kvp.Value;
+				string headEmail = kvp.Key;
 
-				if(visited.Contains(email)){
+				if(visited.Contains(headEmail)){
 					continue;
 				}
 
-				string account = emailsMap[email];
+				string account = emailsMap[headEmail];
+
 				result.Add(new List<string>());
 				int i = result.Count - 1;
 
-				stack.Push(email);
+				stack.Push(headEmail);
 
 				while(stack.Count>0){
 					string em = stack.Pop();
@@ -66,7 +66,7 @@ namespace _csharp
 						if(!visited.Contains(neighbor)){
 							stack.Push(neighbor);
 						}
-					}                
+					}
 				}
 
 				result[i].Sort(new MyComparer());

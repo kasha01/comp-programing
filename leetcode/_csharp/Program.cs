@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
@@ -8,8 +9,12 @@ namespace _csharp
 	class MainClass
 	{
 		public static void Main (string[] args)
-		{
-			//Console.WriteLine (Math.Log10 (100) / Math.Log10 (2));
+		{			
+			var cc = new _fb_oa_matrix_diagonal ();
+			cc.solve ();
+
+			Console.WriteLine ("===========");
+			Console.WriteLine (Math.Log (100));
 
 			var v = new int[5][];
 			v [0] = new int[]{ 1, 2, 0, 1 };

@@ -3,3 +3,8 @@
 /home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/bin/Debug/GeeksForGeeks_csharp.exe
 /home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/obj/x86/Debug/GeeksForGeeks_csharp.exe
 /home/grendizer/CodeBlocks_Projects/GeeksForGeeks_csharp/obj/x86/Debug/GeeksForGeeks_csharp.exe.mdb
+/home/grendizer/block/cp/geeks4geeks/_csharp/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/grendizer/block/cp/geeks4geeks/_csharp/obj/x86/Debug/GeeksForGeeks_csharp.exe
+/home/grendizer/block/cp/geeks4geeks/_csharp/obj/x86/Debug/GeeksForGeeks_csharp.exe.mdb
+/home/grendizer/block/cp/geeks4geeks/_csharp/bin/Debug/GeeksForGeeks_csharp.exe.mdb
+/home/grendizer/block/cp/geeks4geeks/_csharp/bin/Debug/GeeksForGeeks_csharp.exe

@@ -6,5 +6,8 @@ using namespace std;
 
 int main()
 {
+	int a = 1; int b=22;
+	string s = to_string(a) + "->" + to_string(b);
+	cout << s;
 	return 0;
 }
